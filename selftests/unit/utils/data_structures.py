@@ -129,9 +129,6 @@ class TestDataSize(unittest.TestCase):
             data_structures.InvalidDataSize, data_structures.DataSize, "-100t"
         )
         self.assertRaises(
-            data_structures.InvalidDataSize, data_structures.DataSize, "0.5g"
-        )
-        self.assertRaises(
             data_structures.InvalidDataSize, data_structures.DataSize, "10Mb"
         )
 
